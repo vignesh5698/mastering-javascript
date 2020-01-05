@@ -1,3 +1,4 @@
+const vowelsCount = require('./vowelsCount');
 const _ = require('lodash');
 
 const stringTimes = (str, count) => {
@@ -16,6 +17,7 @@ const stringTimes2 = (str, count) => {
 
 const newString = stringTimes('abc', 3)
 const newString2 = stringTimes2('abc', 3)
-
-console.log(newString)
-console.log(newString2)
+const count = vowelsCount('hello');
+console.log(count);
+// console.log(newString)
+// console.log(newString2)

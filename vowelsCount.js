@@ -10,5 +10,8 @@ const vowelsCount = (sentence) => {
   });
   return vowelCount;
 }
-const count = vowelsCount('The quick brown fox');
-console.log(count);
+
+module.exports = vowelsCount;
+
+// const count = vowelsCount('The quick brown fox');
+// console.log(count);
