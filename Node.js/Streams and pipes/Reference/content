@@ -1,0 +1,28 @@
+Stream 
+  - collection of data
+  - seq of chars or number or objects
+
+Streams are not a concept unique to Node.js. They were introduced in the Unix operating system decades ago, and programs can interact with each other passing streams through the pipe operator (|).
+
+.pipe() to get the data source from one end to the other
+Advantages:
+-----------
+1. memory efficient 
+  you don’t need to load large amounts of data in memory before you are able to process it
+2. backpressure
+too much data too quickly
+usecase : 
+  the consumer will begin to queue all the chunks of data for later consumption. The write queue will get longer and longer, and because of this more data must be kept in memory until the entire process has completed.
+  Writing to a disk is a lot slower than reading from a disk, thus, when we are trying to compress a file and write it to our hard disk, backpressure will occur because the write disk will not be able to keep up with the speed from the read.
+  This is why a backpressure mechanism is important. If a backpressure system was not present, the process would use up your system's memory, effectively slowing down other processes
+
+  As data gets transferred, without a backpressure system in place, more memory is being used for each chunk transfer.
+3.Time efficiency:
+  it takes way less time to start processing data as soon as you have it, rather than waiting till the whole data payload is available to start
+
+stdin stdout
+
+
+(vim)
+
+
