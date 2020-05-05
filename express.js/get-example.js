@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+app.locals.title = 'FirstApp';
+
 app.get('/', (request, response) => {
-  response.send('<h1>Hello World...!!!</h1>')
+  response.send('<h1>Hello World...!!!</h1>'+app.locals.title);
 });
 
 app.get('/users/:userId/books/:bookId', (request, response) => {
