@@ -78,19 +78,19 @@ We have to call `event.stopPropogation()` to avoid event propogation.
 document.querySelector('#grandparent')
   .addEventListener('click', (event) => {
     console.log('Grandparent Clicked');
-    event.stopPropogation();
+    event.stopPropagation();
   }, true);
 
   document.querySelector('#parent')
   .addEventListener('click', (event) => {
     console.log('Parent Clicked');
-    event.stopPropogation();
+    event.stopPropagation();
   }, false);
 
   document.querySelector('#child')
   .addEventListener('click', (event) => {
     console.log('Child Clicked');
-    event.stopPropogation();
+    event.stopPropagation();
   }, true);
 ```
 -  When we click on child div,  , DOM element print only `child`

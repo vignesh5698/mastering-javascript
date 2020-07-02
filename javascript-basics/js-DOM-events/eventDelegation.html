@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <div id="menu">
+      <button data-action="save">Save</button>
+      <button data-action="load">Load</button>
+      <button data-action="search">Search</button>
+    </div>
+  </body>
+
+  <script>
+    class Menu{
+      constructor(elem) {
+        this._elem = elem;
+        elem.onclick = this.onClick.bind(this);
+      }
+      save() {
+        alert('Save');
+      }
+      load() {
+        alert('load');
+      }
+      search() {
+        alert('search');
+      }
+      onClick(event) {
+        let action = event.target.dataset.action;
+        this[action]();
+      }
+    }
+    new Menu(menu);
+  </script>
+</html>

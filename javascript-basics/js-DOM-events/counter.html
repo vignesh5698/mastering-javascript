@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <input type="button" value="1" data-counter >
+    <input type="button" value="1" data-counter >
+  </body>
+  <script>
+    document.addEventListener('click', (event) => {
+      if(event.target.dataset.counter !== undefined) {
+        event.target.value++;
+      }
+    });
+  </script>
+</html>
