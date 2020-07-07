@@ -1,0 +1,17 @@
+<html>
+<body>
+  <h1 id="elem">Hello from H1</h1>
+</body>
+<script>
+elem.addEventListener('myEvent', (event) => {
+  alert(event.detail.name);
+});
+
+elem.dispatchEvent(new CustomEvent('myEvent', {
+  detail: {
+    name: 'Vikki'
+  }
+}));
+
+</script>
+</html>

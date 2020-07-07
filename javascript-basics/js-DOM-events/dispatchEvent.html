@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <button id="btn" onclick="alert('click')">AutoClick</button>
+  </body>
+  <script>
+    let event = new Event("click");
+    btn.dispatchEvent(event);
+  </script>
+</html>
