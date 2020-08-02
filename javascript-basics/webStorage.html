@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web Storage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+  <div id="result"></div>
+  <script>
+    console.log('Setting name in local storage...');
+    localStorage.setItem('name', 'Vignesh');
+    console.log('Getting name in local storage...', localStorage.getItem('name'));
+    document.getElementById("result").innerHTML = localStorage.getItem('name');
+  </script>
+</body>
+</html>
