@@ -27,3 +27,4 @@ lastItem.style.color = 'blue';
 var nthItem = document.querySelector('.item-class:nth-child(3)');
 nthItem.style.color = 'coral';
 
+document.getElementById('content').style.margin = '40px';

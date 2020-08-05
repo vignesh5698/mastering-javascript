@@ -2,6 +2,17 @@
 <html>
 <head>
   <title>Access DOM</title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div id="content">
@@ -29,9 +40,15 @@
       <li class="item-class">Item4</li>
     </ul>
     <span id="span-id">Hello from  second span</span>
+    <button id="my-button" class="btn btn-dark btn-block"> Click here</button>
+    <h4>Background selector</h4>
+    <span id="selector-positions"></span>
+    <div style="border:solid 3px; width:400px; height:100px" id="selector">
+    </div>
   </div>
   <script src="accessDOM.js"></script>
   <script src="traversingDOM.js"></script>
   <script src="createElement.js"></script>
+  <script src="events.js"></script>
 </body>
 </html>
