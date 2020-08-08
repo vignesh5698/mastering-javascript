@@ -31,3 +31,14 @@ const fun2 = () => {}
 
 fun1.mybind()
 fun2.mybind()
+
+var MinStack = function() {
+    this.x = 10
+};
+
+MinStack.prototype.push = function() {
+    console.log(this.x);
+};
+
+var obj = new MinStack();
+obj.push()
