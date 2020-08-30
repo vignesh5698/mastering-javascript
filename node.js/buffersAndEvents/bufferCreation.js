@@ -1,3 +1,9 @@
+/* 
+  Buffer:
+    The Buffer class in Node. js is designed to handle raw binary data.
+    Each buffer corresponds to some raw memory allocated outside V8.
+
+*/
 console.time('buffer-ascii-format')
 for(let i=0;i<100000;i++) {
   const buf = new Buffer('Hello world!', 'ascii');

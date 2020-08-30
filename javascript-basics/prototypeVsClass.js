@@ -45,6 +45,8 @@ const person1 = new PPerson('Foo', 123);
 console.log(person1.getDetails());
 
 let PEmployee = function(name, id, salary) {
+  console.log(this)
+  console.log(PPerson.call(this, name, id))
   PPerson.call(this, name, id);
   this.salary = salary;
 }

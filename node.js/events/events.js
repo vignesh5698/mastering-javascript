@@ -14,8 +14,8 @@ myEmitter.on('asyncEvent', (name, age) => {
   setImmediate(() => {
     form.name = name;
     form.age = age;
-    console.log(form);
-  }, 1000);
+    console.log('asyncEvent......', form);
+  }, 3000);
   
 });
 
@@ -24,8 +24,11 @@ myEmitter.once('login', (loggedIn) => {
 });
 
 console.log(form);
+setImmediate(() => console.log('Imm1'), 1000)
 myEmitter.emit('addUser', 'Vignesh', 22)
+setImmediate(() => console.log('Imm2'), 1000)
 myEmitter.emit('asyncEvent', 'Praga', 20)
+setImmediate(() => console.log('Imm3'), 1000)
 console.log(form);
 myEmitter.emit('login', true);
-myEmitter.emit('login', false);
+console.log('END OF CODE//')

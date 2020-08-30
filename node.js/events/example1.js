@@ -13,3 +13,5 @@ emitter.emit('firstEvent', 'IT', 'CSE');
 console.log(emitter.listenerCount('firstEvent'));
 console.log(emitter.getMaxListeners('firstEvent'));
 
+console.log(process.memoryUsage())
+console.log(process.platform)
