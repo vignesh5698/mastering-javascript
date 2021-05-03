@@ -1,0 +1,32 @@
+.container {
+  width: 150px;
+  overflow: auto;
+  border: 1px solid blue;
+  background-color: #ee1e22;
+  display: block;
+}
+
+.fix-me {
+  background-color: white;
+  position: sticky;
+  left: 100px;
+  align-self: flex-end;
+}
+
+.container-two {
+  height: 70px;
+  width: 70px;
+  overflow: auto;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  display: block;
+  position: relative;
+}
+
+.fix-me-two {
+  color: black;
+  position: fixed;
+  top: 97px;
+  background: white;
+}
