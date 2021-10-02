@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Web Worker Example</h2>
+  <div>
+    - Create Worker instance
+    - Call postMessage(message) with message object
+    - write onMessage() Listener
+  </div>
+  <script>
+    if(window.Worker) {
+      var myWorker = new Worker('worker.js');
+      var message = { addThis: { num1: 10, num2: 20 } }
+      myWorker.postMessage(message)
+
+      myWorker.onmessage((e) => {
+        alert(e.data.result)
+      })
+    }
+  </script>
+</body>
+</html>
